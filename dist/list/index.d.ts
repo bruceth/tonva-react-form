@@ -11,7 +11,7 @@ export interface ListProps {
         render?: (item: any, index: number) => JSX.Element;
         onSelect?: (item: any, isSelected: boolean, anySelected: boolean) => void;
         onClick?: (item: any) => void;
-        key?: (item: any) => string;
+        key?: (item: any) => string | number;
     };
     compare?: (item: any, selectItem: any) => boolean;
     selectedItems?: any[];
